@@ -4,7 +4,7 @@ services:
     build:
       context: ./docker/app
       dockerfile: Dockerfile
-    image: lets-build-a-forum-with-laravel/app
+    image: "${APP_NAME}/app"
     ports:
      - "${APP_PORT}:80"
     volumes:
@@ -15,7 +15,7 @@ services:
     build:
       context: ./docker/node
       dockerfile: Dockerfile
-    image: lets-build-a-forum-with-laravel/node
+    image: "${APP_NAME}/node"
     volumes:
      - .:/var/www/html
     networks:

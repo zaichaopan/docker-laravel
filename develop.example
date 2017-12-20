@@ -1,6 +1,7 @@
 #!/usr/bin/env bash
 
 # Set environment variables for dev or CI
+export APP_NAME=${APP_NAME:-my-app}
 export APP_PORT=${APP_PORT:-88}
 export DB_PORT=${DB_PORT:-3306}
 export DB_ROOT_PASSWORD=${DB_ROOT_PASSWORD:-root}
